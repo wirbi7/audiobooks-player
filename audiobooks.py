@@ -31,6 +31,23 @@ builder = Gtk.Builder()
 builder.add_from_file("audiobooks.glade")
 builder.connect_signals(Handler())
 
+liststore1 = builder.get_object('liststore1')
+liststore1.append({'1 скок поскок'})
+
+liststore2 = builder.get_object('liststore2')
+liststore2.append({'1.mp3'})
+liststore2.append({'2.mp3'})
+liststore2.append({'3.mp3'})
+liststore2.append({'4.mp3'})
+liststore2.append({'5.mp3'})
+liststore2.append({'6.mp3'})
+liststore2.append({'7.mp3'})
+liststore2.append({'8.mp3'})
+liststore2.append({'9.mp3'})
+liststore2.append({'10.mp3'})
+liststore2.append({'11.mp3'})
+liststore2.append({'12.mp3'})
+
 window = builder.get_object("window1")
 window.show_all()
 
